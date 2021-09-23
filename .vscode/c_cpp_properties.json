@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-clang-x64",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "compilerArgs": [
+                "`pkg-config", "--libs", "--cflags", "gtk+-3.0`",
+                "`pkg-config", "--libs", "--cflags", "spdlog`"
+            ]
+        }
+    ],
+    "version": 4
+}
